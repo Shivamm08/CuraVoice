@@ -14,26 +14,40 @@ CuraVoice is your comprehensive solution for accessible and reliable healthcare 
 
 ## Features
 CuraVoice provides a seamless and interactive experience for users with a variety of features designed to simplify healthcare accessibility:
-1) Home Page
+## 1) Home Page
+
 The home page offers an intuitive navigation interface, allowing users to explore the app’s functionalities effortlessly. It provides a welcoming message and introduces the app’s core purpose: prioritizing your health with reliable and accessible solutions.
 ![Project Diagram](assets/Homepage1.png)
+
 ![Project Diagram](assets/Homepage2.png)
 
-2) Multilingual Chatbot
+## 2) Multilingual Chatbot
+
 The chatbot enables users to input symptoms in any supported language and provides accurate disease predictions with treatment recommendations. CuraVoice supports 15 Indian languages, including Hindi, Bengali, Tamil, Telugu, Kannada, and Malayalam, as well as major global languages like Spanish, French, German, Chinese (Simplified), Japanese, and more, ensuring accessibility for users worldwide.
 ![Project Diagram](assets/Language.png)
+
 ![Project Diagram](assets/English_Output.png)
+
 ![Project Diagram](assets/Hindi_Output.png)
 
-3) Text-to-Speech
+## 3) Text-to-Speech
+
 CuraVoice enhances accessibility by converting chatbot responses into audio using Google Text-to-Speech (gTTS). This feature allows users to listen to responses in their preferred language, making the app more inclusive for users with reading difficulties or language preferences.
+
 English Audio Sample:
 <audio controls>
   <source src="assets/audio_english.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+
 Hindi Audio Sample:
 <audio controls>
   <source src="assets/audio_hindi.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
+
+## 4) Specialist Locator
+
+Integrated with Google Maps API, the Specialist Locator allows users to find nearby hospitals and specialists based on their symptoms. It ensures real-time access to reliable healthcare providers in their vicinity.
+
+![Project Diagram](assets/Specialist.png)
