@@ -49,6 +49,37 @@ CuraVoice leverages a Large Language Model (LLM) of size 12.5 GB, fine-tuned for
 
 The model processes multilingual input by translating user queries into English via Google Translator. It generates context-aware responses using a robust text generation pipeline, which are then translated back to the user’s preferred language and optionally converted to speech using Google TTS for accessibility. The LLM directory is specified in app.py and can be downloaded either via the provided Google Drive link or automatically by the app at runtime.
 
-https://drive.google.com/drive/folders/1KmryvlhmMDw8thLgE9aRg9ul7FIKJgOK?usp=sharing
+## Installation Guide
 
+## 1) Clone the Repository
+Start by cloning the CuraVoice repository to your local machine:
+
+```bash
+git clone https://github.com/your-username/CuraVoice.git
+cd CuraVoice
+```
+
+## 2) Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 3) Set Up the LLM Model
+
+The LLM model (12.5 GB) is not included in the repository. You can set it up in one of two ways:
++ Manual Download: Download the model files from the provided Google Drive link and place them in the specified directory in app.py.
+ https://drive.google.com/drive/folders/1KmryvlhmMDw8thLgE9aRg9ul7FIKJgOK?usp=sharing
+
++ Automatic Download: Run the app, and it will automatically fetch the model if not found locally.
+
+## 4) Run the Flask App
+
+Start the Flask server to host the application locally:
+
+```bash
+python app.py
+```
+
+The app will be available at http://localhost:5000 in your web browser.
 
