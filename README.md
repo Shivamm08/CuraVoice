@@ -45,7 +45,7 @@ Integrated with Google Maps API, the Specialist Locator allows users to find nea
 
 ## LLM
 
-CuraVoice leverages a Large Language Model (LLM) of size 12.5 GB, fine-tuned for medical symptom analysis, disease prediction, and treatment recommendations. The model, optimized using 4-bit quantization with BitsAndBytesConfig, is efficient yet requires a GPU with sufficient VRAM for smooth training and inference. The LLM is pre-trained and further fine-tuned on medical-specific datasets, such as Wiki Medical Terms, using Low-Rank Adaptation (LoRA) to enhance its accuracy for healthcare-related queries.
+CuraVoice leverages a Large Language Model (LLM), which is fine-tuned for medical symptom analysis, disease prediction, and treatment recommendations. The model, optimized using 4-bit quantization with BitsAndBytesConfig, is efficient yet requires a GPU with sufficient VRAM for smooth training and inference. The LLM is pre-trained and further fine-tuned on medical-specific datasets, such as Wiki Medical Terms, using Low-Rank Adaptation (LoRA) to enhance its accuracy for healthcare-related queries.
 
 The model processes multilingual input by translating user queries into English via Google Translator. It generates context-aware responses using a robust text generation pipeline, which are then translated back to the user’s preferred language and optionally converted to speech using Google TTS for accessibility. The LLM directory is specified in app.py and can be downloaded either via the provided Google Drive link or automatically by the app at runtime.
 
@@ -67,11 +67,11 @@ pip install -r requirements.txt
 
 ## 3) Set Up the LLM Model
 
-The LLM model (12.5 GB) is not included in the repository. You can set it up in one of two ways:
-+ Manual Download: Download the model files from the provided Google Drive link and place them in the specified directory in app.py.
+The LLM model is not included in the repository. You can set it up in one of two ways:
++ Manual Download: Download the model files from the provided Google Drive link and place all the files in the specified directory in app.py.
  https://drive.google.com/drive/folders/1KmryvlhmMDw8thLgE9aRg9ul7FIKJgOK?usp=sharing
 
-+ Automatic Download: Run the app, which automatically fetches the model if not found locally.
++ Automatic Download: Run the app, which automatically fetches the model if not found locally. Make sure to specify its directory in app.py. 
 
 ## 4) Run the Flask App
 
