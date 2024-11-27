@@ -1,0 +1,438 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    overflow: hidden;
+    margin:0;
+}
+.main{
+    display: flex; 
+    height: 100vh;
+    padding: 0.5rem;
+}
+.sidebar{
+    width:340px;
+    background-color: #121212;
+}
+.sidebar:hover{
+    /* border:1px solid #5073fb; */
+    border-radius:  0.5rem;
+}
+.main-content{
+    flex: 1;
+    border-radius: 1rem;
+    overflow: auto;
+    background-color: #121212;
+    padding: 0 1.5rem 0 1.5rem;
+    position: relative;
+    border-radius:  0.25rem;
+}
+.nav{
+    background-color: #121212;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.nav-option{
+    line-height: 2.5rem;
+    opacity: 0.7;
+    padding: 0.5rem 0.75rem;
+    display:inline-block;
+}
+.nav-option:hover{
+    opacity: 1;
+}
+.nav-option i{
+    font-size: 1.25rem;
+}
+.nav-option a{
+    font-size: 1rem;
+    margin-left: 1rem;
+}
+.box-p2{
+    font-size: 0.85rem;
+    opacity:0.9;
+}
+.badge{
+    background-color: #fff;
+    border: none;
+    border-radius: 100px;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    height:2rem;
+    width: fit-content;
+}
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.sticky-nav-icons{
+    margin:0.75rem;
+}
+.sticky-nav-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+.logo span {
+    color: #5073fb;
+}
+#chat{
+    height:550px;
+    width:80%;
+    overflow-y: hidden;
+}
+.chat-container {
+    background: #121212;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+/* Input Section Styling */
+.inp {
+    display: flex;
+    align-items: center;  /* Align items in the center vertically */
+    margin-top: 10px;
+}
+/* Textbox Styling */
+.textarea {
+    flex: 1;
+    width: 60% !important;  /* Make the textbox wider */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    background-color: #1e1e1e; /* Ensure it's visible on the background */
+    color: #fff;
+    height: 46px; /* Set the height to match the select box */
+    margin-right: 10px;  /* Add space between the textbox and the select box */
+}
+/* Send Button */
+.inp button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    height: 46px; /* Match the height of input and select box */
+}
+.inp button:hover {
+    background-color: #0056b3;
+}
+.find{
+    background: #121212;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+#map{
+    height:570px;
+    width:80%;
+    overflow-y: hidden;
+}
+
+/* About Section Enhancements */
+
+/* Hero Section */
+.hero-section {
+    background-image: url('/static/images/hero-background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 20px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(18, 18, 18, 0.8); /* Overlay color */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5073fb;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #4051b5;
+}
+
+/* Content Section */
+.content-section {
+    padding: 60px 20px;
+    background-color: #121212;
+    color: #fff;
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5em;
+}
+
+.content-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.content-item {
+    background-color: #1e1e1e;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1 1 calc(25% - 60px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.content-item:hover {
+    transform: translateY(-10px);
+}
+
+.content-item i {
+    font-size: 3em;
+    color: #5073fb;
+    margin-bottom: 20px;
+}
+
+.content-item h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.content-item p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .content-item {
+        flex: 1 1 calc(50% - 60px);
+    }
+}
+
+@media (max-width: 600px) {
+    .content-item {
+        flex: 1 1 100%;
+    }
+    .hero-content h1 {
+        font-size: 2em;
+    }
+    .hero-content p {
+        font-size: 1.2em;
+    }
+}
+
+/* Chat Box Styling */
+#chat-box {
+    height: 50vh;  /* Make the chat box shorter */
+    width: 100%;   /* Full width of its container */
+    overflow-y: auto;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+/* Styling for the Select Box */
+#language-select {
+    width: 25%;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 1px solid #ccc;
+    height: 46px;
+    margin-right: 10px;
+}
+
+/* Ensures that the selected option is visible when the select box is closed */
+.select2-container--default .select2-selection--single {
+    background-color: #1e1e1e;  /* Background of the closed select box */
+    color: #fff;  /* White color for selected language */
+    border: 1px solid #ccc;
+}
+
+/* Adjust the color of the selected option */
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff; /* White text color when selected */
+    background-color: #1e1e1e; /* Dark background */
+}
+
+/* Dropdown options and hover behavior */
+.select2-container--default .select2-results__option {
+    background-color: #1e1e1e;  /* Dark background for the options */
+    color: #fff;  /* White text color for options */
+}
+
+/* Change the hover color for options in the select box */
+.select2-container--default .select2-results__option--highlighted {
+    background-color: #007bff;  /* Blue highlight for hovered option */
+    color: #fff;  /* White text color for hovered option */
+}
+
+/* Placeholder text styling */
+.select2-container--default .select2-selection__placeholder {
+    color: #aaa; /* Placeholder color */
+}
+
+/* Dropdown arrow styling */
+.select2-container--default .select2-selection__arrow b {
+    border-color: #fff transparent transparent transparent; /* White arrow */
+}
+
+/* Audio Player Styling */
+#audio-container {
+    display: none;  /* Initially hidden */
+    margin-top: 10px;
+    background-color: #1e1e1e;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Adjust Audio Player */
+audio {
+    width: 80%; /* Adjust the width of the audio player */
+    max-width: 400px; /* Set a max width for better alignment */
+}
+
+/* Home Page About Section */
+.about {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #5073fb;
+}
+
+.about p {
+    font-size: 1.2em;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about p:last-child {
+    margin-bottom: 0;
+}
+
+/* Button in About Section */
+.about .cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #5073fb;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 1em;
+}
+
+.about .cta-button:hover {
+    background-color: #4051b5;
+}
+
+/* Media Query for Small Screens */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-content p {
+        font-size: 1.2em;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .content-item {
+        flex: 1 1 100%;  /* Stacks content items on small screens */
+    }
+
+    #language-select {
+        width: 50%;  /* Adjust select box width for smaller screens */
+    }
+
+    .textarea {
+        width: 100% !important;  /* Make the text input box full width */
+    }
+}
+
+/* Footer Section */
+.footer {
+    background-color: #1e1e1e;
+    color: #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9em;
+    border-top: 1px solid #5073fb;
+}
+
+.footer a {
+    color: #5073fb;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
