@@ -51,7 +51,7 @@ The model processes multilingual input by translating user queries into English 
 
 ## Installation Guide
 
-## 1) Clone the Repository
+### 1) Clone the Repository
 Start by cloning the CuraVoice repository to your local machine:
 
 ```bash
@@ -59,13 +59,13 @@ git clone https://github.com/your-username/CuraVoice.git
 cd CuraVoice
 ```
 
-## 2) Install Dependencies
+### 2) Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-## 3) Set Up the LLM Model
+### 3) Set Up the LLM Model
 
 The LLM model is not included in the repository. You can set it up in one of two ways:
 + Manual Download: Download the model files from the provided Google Drive link and place all the files in the specified directory in app.py.
@@ -73,7 +73,7 @@ The LLM model is not included in the repository. You can set it up in one of two
 
 + Automatic Download: Run the app, which automatically fetches the model if not found locally. Make sure to specify its directory in app.py. 
 
-## 4) Run the Flask App
+### 4) Run the Flask App
 
 Start the Flask server to host the application locally:
 
