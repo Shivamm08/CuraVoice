@@ -71,7 +71,7 @@ The LLM model (12.5 GB) is not included in the repository. You can set it up in 
 + Manual Download: Download the model files from the provided Google Drive link and place them in the specified directory in app.py.
  https://drive.google.com/drive/folders/1KmryvlhmMDw8thLgE9aRg9ul7FIKJgOK?usp=sharing
 
-+ Automatic Download: Run the app, and it will automatically fetch the model if not found locally.
++ Automatic Download: Run the app, which automatically fetches the model if not found locally.
 
 ## 4) Run the Flask App
 
@@ -83,3 +83,10 @@ python app.py
 
 The app will be available at http://localhost:5000 in your web browser.
 
+## Team Members
+1) Shivamm Warambhey (Team Leader) - Built the backend, full project integration, and managed team coordination.
+2) A. Chennakeshava Reddy - Designed the front-end interface and handled Map API integration.
+3) Aman Amirneni - Led the development of the Large Language Model (LLM) and implemented fine-tuning for medical-specific queries.
+4) Koppuravuri Rupesh Venkata Sai Krishna - Assisted in the development of the LLM model and contributed to its implementation.
+5) Mohit Anand Pitchika - Assisted in testing the application and helping with debugging tasks.
+6) Penumaka Dedeepya - Helped brainstorm ideas, create the presentation for pitching CuraVoice, and contribute to pitching discussions.
