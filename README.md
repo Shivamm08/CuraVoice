@@ -85,7 +85,7 @@ The app will be available at http://localhost:5000 in your web browser.
 
 ## Team Members
 1) Shivamm Warambhey (Team Leader) - Built the backend, full project integration, and managed team coordination.
-2) A. Chennakeshava Reddy - Designed the front-end interface and handled goggle Map API integration.
+2) A. Chennakeshava Reddy - Designed the front-end interface and handled Google Map API integration.
 3) Aman Amirneni - Led the development of the Large Language Model (LLM) and implemented fine-tuning for medical-specific queries.
 4) Koppuravuri Rupesh Venkata Sai Krishna - Assisted in the development of the LLM model and contributed to its implementation.
 5) Mohit Anand Pitchika - Assisted in testing the application and helping with debugging tasks.
